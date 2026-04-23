@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyRoads</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen" class="lock-screen">
+  <h1>MyRoads</h1>
+  <div id="dots" class="dots"></div>
+
+  <div class="keypad">
+    <button onclick="press(1)">1</button>
+    <button onclick="press(2)">2</button>
+    <button onclick="press(3)">3</button>
+    <button onclick="press(4)">4</button>
+    <button onclick="press(5)">5</button>
+    <button onclick="press(6)">6</button>
+    <button onclick="press(7)">7</button>
+    <button onclick="press(8)">8</button>
+    <button onclick="press(9)">9</button>
+    <button onclick="clearCode()">⌫</button>
+    <button onclick="press(0)">0</button>
+    <button onclick="unlock()">→</button>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="hidden app-container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>MyRoads</h2>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <div class="card">
+      <h3>License</h3>
+      <p>Expiry: 12 Aug 2027</p>
+      <p>Points: 3</p>
+    </div>
+
+    <div class="card">
+      <h3>Bookings</h3>
+      <p>No bookings</p>
+    </div>
+
+    <div class="card">
+      <h3>Reminders</h3>
+      <p>Rego due soon</p>
+    </div>
+
+    <div class="card">
+      <h3>Documents</h3>
+      <p>Coming soon</p>
+    </div>
+
+  </div>
+
+  <!-- TAB BAR -->
+  <div class="tabbar">
+    <button>🏠</button>
+    <button>📅</button>
+    <button>📄</button>
+    <button>⚙️</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
